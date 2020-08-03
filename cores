@@ -1,0 +1,29 @@
+/* Escreva um método chamado cor que receba como parâmetro uma variável do tipo inteiro chamada identificador e 
+imprime a palavra verde caso o valor do identificador seja igual a 1, amarelo caso o valor do identificador seja igual a 2, 
+azul caso o valor do identificador seja igual a 3, e branco caso o valor do identificador seja igual a 4. 
+Caso contrário (isto é, se o valor do identificador não for 1, 2, 3 ou 4) deverá imprimir “identificador invalido”. 
+*/
+
+class cores{
+
+	static void cor(int identificador){
+
+		switch (identificador){
+	
+		case 1 : System.out.println("Verde");
+				break;
+		case 2 : System.out.println("Amarelo");
+				break;
+		case 3 : System.out.println("Azul");
+				break;
+		case 4 : System.out.println("Branco");
+				break;
+		default : System.out.println("Identificador invalido");
+		}
+	}
+
+	public static void main(String[]args){
+
+		cor(5);
+	}
+}	
